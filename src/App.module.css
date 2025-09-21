@@ -1,0 +1,116 @@
+.app {
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  background: #1e293b;
+  padding: 10px 20px;
+  border-bottom: 1px solid #334155;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.formSection {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.formBox {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.formBox input,
+.formBox textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.buttonRow {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonRow button {
+  background: #4f46e5;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buttonRow button:disabled {
+  background: #475569;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #f87171;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.tagBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: #0f172a;
+  padding: 8px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+}
+
+.tag {
+  background: #4f46e5;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.results {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.loading {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
